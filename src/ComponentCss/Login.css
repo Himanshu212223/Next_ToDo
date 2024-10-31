@@ -1,0 +1,82 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 60vh; */
+    /* background-color: tomato; */
+}
+.formButton{
+    padding: 10px 20px;
+    width:  80%;
+    margin: 5px 0px;
+    border-radius: 10px;
+
+}
+.formLogin{
+    color: #40916c;
+    background-color: white;
+    border: 2px solid #40916c;
+}
+.formLogin:hover{
+    color: white;
+    background-color: #40916c;
+    border: 2px solid transparent;
+}
+.formSignup{
+    color: deeppink;
+    /* background-color: #00b4d8; */
+    text-align: center;
+    border: 2px solid transparent;
+}
+.formSignup:hover{
+    color: white;
+    background-color: deeppink;
+    border: 2px solid deeppink;
+}
+.inputs{
+    border: 2px solid rgb(211, 208, 208);
+    padding: 10px 20px;
+    width:  80%;
+    margin: 10px 0px;
+    border-radius: 10px;
+    outline: none;
+}
+.inputs:hover{
+    border: 2px solid black;
+}
+.loginBox{
+    width: 30%;
+    min-height: 60vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0.1px rgb(198, 198, 198);
+}
+.loginText{
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 2rem;
+    color: #495057;
+    font-family: "Ubuntu", sans-serif;
+}
+.loginPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: pink; */
+}
+.paragraph{
+    color: #495057;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+
+
+@media only screen and (min-width:200px) and (max-width:768px){
+    .loginBox{
+        width: 90%;
+    }
+}

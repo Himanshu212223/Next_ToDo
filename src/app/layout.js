@@ -1,5 +1,9 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Script from "next/script";
+import NavBar from "@/Components/NavBar";
+import {ContextProvider} from "@/ClientComponent/Provider";
+import {Toaster} from "react-hot-toast"
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -23,7 +27,21 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+
+
+        <ContextProvider>
+          <>
+            <NavBar />
+            {children}
+            <Toaster />
+          </>
+        </ContextProvider>
+
+
+        <Script src="https://kit.fontawesome.com/9fa326583e.js" crossOrigin="anonymous"></Script>
+        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Raleway+Dots&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"></link>
       </body>
     </html>
   );
